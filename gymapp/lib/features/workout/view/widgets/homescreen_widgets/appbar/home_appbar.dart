@@ -15,11 +15,19 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
           color: AppColors.textPrimary,
         ),
       ),
+
       actions: [
-        IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.notifications_none, color: AppColors.textPrimary),
+        Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: Colors.white.withValues(alpha: 0.1),
+          ),
+          child: IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.notifications_sharp, color: AppColors.textPrimary),
+          ),
         ),
+        SizedBox(width: 10,),
       ],
       shadowColor: AppColors.primary,
       elevation: 1,
